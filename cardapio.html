@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definição de codificação de caracteres e meta tags para responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo com Bootstrap - Pizzaria</title>
+    
+    <!-- Link para o Bootstrap (framework CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome para os ícones das redes sociais -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Link para o arquivo de estilo customizado -->
+    <link rel="stylesheet" href="cardapio.css">
+</head>
+<body>
+
+<!-- Barra de navegação (Navbar) -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <!-- Logo da pizzaria -->
+        <a href="index.html"><img class="navbar-brand"  id="logo" src="img/logo.png" alt="Logo"></a>
+      
+        <!-- Toggler para dispositivos móveis -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu de navegação -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cardapio.html">Cardápio</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Título do Cardápio -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Nosso Cardápio</h2>
+    <p class="text-center">Escolha entre nossas deliciosas pizzas, bebidas e sobremesas! Temos opções para todos os gostos.</p>
+    
+    <!-- Seção de Pizzas -->
+    <h3>Pizzas</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Pizza Margherita -->
+        <div class="col">
+            <div class="card">
+                <img src="img/margerita.jpeg" class="card-img-top" alt="Pizza Margherita">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza Margherita</h5>
+                    <p class="card-text">Molho de tomate, muçarela, manjericão fresco e azeite de oliva. Uma combinação clássica.</p>
+                    <p class="card-text"><strong>Preço: R$ 35,00</strong></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pizza Calabresa -->
+        <div class="col">
+            <div class="card">
+                <img src="img/calabresa.jpeg" class="card-img-top" alt="Pizza Calabresa">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza Calabresa</h5>
+                    <p class="card-text">Molho de tomate, muçarela, calabresa fatiada, cebola e orégano.</p>
+                    <p class="card-text"><strong>Preço: R$ 40,00</strong></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pizza 4 Queijos -->
+        <div class="col">
+            <div class="card">
+                <img src="img/quatro-queijo.jpeg"  class="card-img-top" alt="Pizza 4 Queijos">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza 4 Queijos</h5>
+                    <p class="card-text">Muçarela, provolone, parmesão e gorgonzola. Para quem ama queijos!</p>
+                    <p class="card-text"><strong>Preço: R$ 45,00</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Bebidas -->
+    <h3 class="mt-5">Bebidas</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Refrigerante -->
+        <div class="col">
+            <div class="card">
+                <img src="img/bebida.jpeg"  class="card-img-top" alt="Refrigerante">
+                <div class="card-body">
+                    <h5 class="card-title">Refrigerante</h5>
+                    <p class="card-text">Escolha entre Coca-Cola, Fanta, Guaraná e outros. 350ml.</p>
+                    <p class="card-text"><strong>Preço: R$ 7,00</strong></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Suco Natural -->
+        <div class="col">
+            <div class="card">
+                <img src="img/suco.jpeg"  class="card-img-top" alt="Suco Natural">
+                <div class="card-body">
+                    <h5 class="card-title">Suco Natural</h5>
+                    <p class="card-text">Suco natural de laranja, limão ou maracujá, fresquinho!</p>
+                    <p class="card-text"><strong>Preço: R$ 10,00</strong></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cerveja -->
+        <div class="col">
+            <div class="card">
+                <img src="img/cerveja.png" class="card-img-top" alt="Cerveja">
+                <div class="card-body">
+                    <h5 class="card-title">Cerveja</h5>
+                    <p class="card-text">Cerveja gelada, variedade de marcas disponíveis. 350ml.</p>
+                    <p class="card-text"><strong>Preço: R$ 12,00</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+</div> 
+    <footer>
+        <div class="container">
+          <ul class="social-icons">
+            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+          <p>&copy; 2024 Pizzaria Sabor & Cia - Todos os direitos reservados</p>
+        </div>
+      </footer>
+       
+<!-- Script do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

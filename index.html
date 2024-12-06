@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definição de codificação de caracteres e meta tags para responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+
+    <!-- Link para o Bootstrap (framework CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para Font Awesome (para ícones das redes sociais) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Link para o arquivo de estilo customizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Barra de navegação -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <!-- Logo da pizzaria -->
+    <a href="index.html"><img class="navbar-brand" id="logo" src="img/logo.png" alt="Logo"></a>
+    <!-- Toggler para dispositivos móveis -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Menu de navegação -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="cardapio.html">Cardápio</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre-nos">Sobre</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel de imagens -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <!-- Cada item do carrossel -->
+    <div class="carousel-item active">
+      <img src="img/slide-1.png" class="d-block w-100" alt="Primeira imagem do carousel">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slide-2.png" class="d-block w-100" alt="Segunda imagem do carousel">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slide-3.jpg" class="d-block w-100" alt="Terceira imagem do carousel">
+    </div>
+  </div>
+  <!-- Controles do carrossel -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
+<!-- Seção "Sobre Nós" -->
+<div class="container mt-5" id="sobre-nos">
+    <div class="row">
+        <!-- Texto sobre a pizzaria -->
+        <div class="col-md-8">
+            <h2>Sobre Nós</h2>
+            <p>A Pizzaria Sabor & Cia é especializada em pizzas artesanais...</p>
+        </div>
+        <!-- Ícones de redes sociais -->
+        <div class="col-md-4">
+            <ul class="social-icons">
+                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Seção de contato -->
+<div class="container mt-5">
+  <h2>Fale Conosco</h2>
+  <p>Tem alguma dúvida? Preencha o formulário abaixo e entraremos em contato!</p>
+
+  <!-- Formulário de contato -->
+  <form action="#" method="POST">
+    <div class="row">
+      <!-- Campo Nome -->
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+      </div>
+      <!-- Campo E-mail -->
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Seu e-mail" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Campo Telefone -->
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Seu telefone" required>
+        </div>
+      </div>
+      <!-- Campo Assunto -->
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="assunto" class="form-label">Assunto</label>
+          <select class="form-select" id="assunto" name="assunto" required>
+            <option value="">Escolha o assunto</option>
+            <option value="Pedido">Pedido</option>
+            <option value="Dúvida">Dúvida</option>
+            <option value="Reclamação">Reclamação</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Campo Mensagem -->
+    <div class="mb-3">
+      <label for="mensagem" class="form-label">Mensagem</label>
+      <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+    </div>
+
+    <!-- Botão Enviar -->
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+
+  <!-- Tabela de Horários -->
+  <h2 class="mt-5">Horários de Funcionamento</h2>
+  <p>Confira nossos horários de funcionamento:</p>
+  
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Dia da Semana</th>
+        <th scope="col">Horário de Funcionamento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Segunda-feira</td><td>18:00 - 23:00</td></tr>
+      <tr><td>Terça-feira</td><td>18:00 - 23:00</td></tr>
+      <tr><td>Quarta-feira</td><td>18:00 - 23:00</td></tr>
+      <tr><td>Quinta-feira</td><td>18:00 - 23:00</td></tr>
+      <tr><td>Sexta-feira</td><td>18:00 - 00:00</td></tr>
+      <tr><td>Sábado</td><td>12:00 - 00:00</td></tr>
+      <tr><td>Domingo</td><td>12:00 - 23:00</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Rodapé -->
+<footer>
+  <div class="container">
+    <ul class="social-icons">
+      <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+    <p>&copy; 2024 Pizzaria Sabor & Cia - Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<!-- Script do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

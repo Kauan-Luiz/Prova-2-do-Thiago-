@@ -1,0 +1,112 @@
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do body */
+body {
+    background-color: #f0f0f0; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Tamanho da Logo */
+#logo {
+    width: 8%;
+}
+
+/* Estilos de layout das colunas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Ajuste para as imagens das cards */
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+/* Estilos das cards */
+.card-body {
+    flex-grow: 1;
+}
+
+/* Estilos da barra de navegação */
+.navbar-custom {
+    background-color: #a70c19; /* Cor de fundo */
+    height: 100px;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white;
+}
+
+.navbar-custom .nav-link.active {
+    color: white;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: white;
+}
+
+/* Estilos do rodapé */
+
+footer {
+    margin-top: 100px; /* Espaço superior */
+    background-color: #a70c19; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 30px 0; /* Espaçamento interno */
+}
+
+/* Ícones sociais do rodapé */
+footer .social-icons {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    text-align: center; /* Centraliza os ícones */
+}
+
+footer .social-icons li {
+    display: inline-block;
+    margin: 0 15px; /* Espaçamento entre os ícones */
+}
+
+footer .social-icons i {
+    color: #fff; /* Cor dos ícones */
+    font-size: 30px; /* Tamanho dos ícones */
+    transition: color 0.3s; /* Efeito de transição */
+}
+
+footer .social-icons i:hover {
+    color: #ff5100; /* Cor dos ícones ao passar o mouse */
+}
+
+footer p {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaço superior */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 14px;
+    }
+
+    footer .social-icons li {
+        margin: 0 10px;
+    }
+
+    footer .social-icons i {
+        font-size: 25px;
+    }
+}

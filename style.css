@@ -1,0 +1,140 @@
+/* Estilos gerais */
+body {
+    background-color: #f0f0f0; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Logo da navbar */
+#logo {
+    width: 8%; /* Ajuste o tamanho do logo */
+}
+
+/* Navbar personalizada */
+.navbar-custom {
+    background-color: #a70c19; /* Cor de fundo da navbar */
+    height: 100px; /* Altura da navbar */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white; /* Cor branca para o texto da navbar */
+}
+
+.navbar-custom .nav-link.active {
+    color: white; /* Cor para links ativos */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: white; /* Cor branca para o ícone de toggle */
+}
+
+/* Estilos do Carousel */
+.carousel-inner img {
+    width: 100%;
+    height: 500px; /* Altura fixa para as imagens do carousel */
+    object-fit: cover; /* Garante que a imagem cubra o espaço disponível */
+}
+
+/* Container do Carousel */
+#carouselExampleCaptions {
+    margin-top: 50px; /* Espaço superior */
+    width: 75%; /* O carousel ocupa 75% da largura da tela */
+    height: 500px; /* Altura do carousel */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza o carousel */
+}
+
+/* Seção 'Sobre Nós' */
+#sobre-nos {
+    background-color: #a70c19; /* Cor de fundo da seção */
+    color: white; /* Cor do texto */
+    padding: 50px; /* Espaçamento interno */
+    border-radius: 60px; /* Bordas arredondadas */
+}
+
+/* Estilos das colunas */
+.row {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Ícones sociais */
+.social-icons {
+    list-style: none; /* Remove bullets das listas */
+    padding: 0;
+    margin-top: 20px; /* Espaço superior */
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px; /* Espaçamento entre os ícones */
+}
+
+.social-icons li a {
+    color: white; /* Cor dos ícones */
+    font-size: 30px; /* Tamanho dos ícones */
+}
+
+/* Rodapé */
+footer {
+    margin-top: 100px; /* Espaço superior */
+    background-color: #a70c19; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 30px 0; /* Espaçamento interno */
+}
+
+/* Ícones sociais do rodapé */
+footer .social-icons {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    text-align: center; /* Centraliza os ícones */
+}
+
+footer .social-icons li {
+    display: inline-block;
+    margin: 0 15px; /* Espaçamento entre os ícones */
+}
+
+footer .social-icons i {
+    color: #fff; /* Cor dos ícones */
+    font-size: 30px; /* Tamanho dos ícones */
+    transition: color 0.3s; /* Efeito de transição */
+}
+
+footer .social-icons i:hover {
+    color: #ff5100; /* Cor dos ícones ao passar o mouse */
+}
+
+footer p {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaço superior */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Ocultar o carousel em dispositivos pequenos */
+    #carouselExampleCaptions {
+        display: none;
+    }
+
+    /* Centraliza os itens da navbar em dispositivos pequenos */
+    .navbar-custom .navbar-nav {
+        text-align: center;
+    }
+
+    /* Ajusta o tamanho do texto e os ícones no rodapé */
+    footer p {
+        font-size: 14px;
+    }
+
+    footer .social-icons li {
+        margin: 0 10px; /* Ajuste o espaçamento entre os ícones */
+    }
+
+    footer .social-icons i {
+        font-size: 25px; /* Reduz o tamanho dos ícones */
+    }
+}
