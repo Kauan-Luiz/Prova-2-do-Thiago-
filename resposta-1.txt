@@ -1,0 +1,17 @@
+(questoes - 1)
+
+Container: Toda a página está dentro de um <div class="container">. O Bootstrap usa o container para centralizar o conteúdo e limitar sua largura
+. Para tornar o layout mais fluido, também existe o container-fluid, que ocupa 100% da largura da tela. No seu caso, estou usando o container,
+que garante uma largura controlada dependendo do tamanho da tela.
+
+Linhas e Colunas: O sistema de grid do Bootstrap é baseado em linhas (row) e colunas (col), onde a linha (row) agrupa as colunas (col). 
+O layout de colunas pode ser ajustado para diferentes tamanhos de telas, como desktop, tablet e celular.
+
+O Bootstrap permite que o layout se ajuste automaticamente conforme o tamanho da tela, usando classes específicas para diferentes larguras.
+ As principais classes de breakpoint são:
+
+col-: Para telas pequenas (celulares).
+col-sm-: Para telas pequenas (em dispositivos como celulares).
+col-md-: Para dispositivos médios (tablets).
+col-lg-: Para telas grandes (desktops).
+col-xl-: Para telas extra grandes.
